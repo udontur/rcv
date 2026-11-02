@@ -1,0 +1,104 @@
+% !TEX program = pdflatex
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{fontawesome5}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{iftex}
+
+%----------ACCENT COLOR----------
+\definecolor{accentgreen}{HTML}{2D6A4F}
+
+\usepackage[colorlinks=true, urlcolor=accentgreen, linkcolor=accentgreen, citecolor=accentgreen]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{iftex}
+
+\ifPDFTeX
+  \input{glyphtounicode}
+\fi
+
+%----------FONT OPTIONS----------
+\usepackage[sfdefault]{roboto}
+\renewcommand{\familydefault}{\sfdefault}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.75em}
+
+\ifPDFTeX
+  \pdfgentounicode=1
+\fi
+
+%-------------------------------------------
+%%%%%%  COVER LETTER STARTS HERE  %%%%%%%%%%
+%-------------------------------------------
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  \textbf{\Huge \scshape \color{accentgreen} Hadrian Lau} \\ \vspace{4pt}
+  \small
+  \faEnvelope~\href{mailto:contact@hadrian.cc}{\textcolor{black}{contact@hadrian.cc}} $|$
+  \faGlobe~\href{https://hadrian.cc}{\textcolor{black}{\underline{www.hadrian.cc}}} $|$
+  \faGithub~\href{https://github.com/udontur}{\textcolor{black}{\underline{@udontur}}} $|$
+  \faLaptopCode~\href{https://leetcode.com/udontur}{\textcolor{black}{\underline{LeetCode}}}
+\end{center}
+
+%----------DIVIDER----------
+\vspace{2pt}
+{\color{accentgreen}\rule{\textwidth}{2.5pt}}
+\vspace{6pt}
+
+%----------RECIPIENT BLOCK----------
+\begin{flushright}
+  \textbf{\large COMPANY NAME} \\
+  \small ADDRESS \\
+  \small CITY \\
+  \small COUNTRY \\[4pt]
+  \small DATE
+\end{flushright}
+
+\vspace{4pt}
+
+%----------SALUTATION----------
+\begin{setstretch}{1.5}
+Dear NAME,
+
+%----------BODY----------
+\vspace{4pt}
+
+Plzzz let me in bro
+
+\vspace{16pt}
+
+%----------CLOSING----------
+Yours Sincerely,
+
+Hadrian Lau
+\end{setstretch}
+
+%-------------------------------------------
+\end{document}

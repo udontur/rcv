@@ -1,0 +1,218 @@
+% !TEX program = pdflatex
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+
+\definecolor{accentgreen}{HTML}{2D6A4F}
+
+\usepackage[colorlinks=true, urlcolor=accentgreen, linkcolor=accentgreen, citecolor=accentgreen]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{iftex}
+
+\ifPDFTeX
+  \input{glyphtounicode}
+\fi
+
+\usepackage[sfdefault]{roboto}
+\renewcommand{\familydefault}{\sfdefault}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\scshape\bfseries\raggedright\Large\color{accentgreen}}{}{0em}{}[\color{accentgreen}\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+\ifPDFTeX
+  \pdfgentounicode=1
+\fi
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small#2} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      {\large#1} & #2 \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
+
+\renewcommand\labelitemi{$\bullet$}
+\renewcommand\labelitemii{$\bullet$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=6pt, parsep=0pt, topsep=0pt, partopsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label=$\bullet$, itemsep=2pt, parsep=0pt, topsep=3pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+	\textbf{\Huge \scshape \color{accentgreen} Hadrian Lau} \\ \vspace{4pt}
+	\small \faEnvelope~\href{mailto:contact@hadrian.cc}{\textcolor{black}{contact@hadrian.cc}} $|$
+	\faGlobe~\href{https://hadrian.cc}{\textcolor{black}{\underline{www.hadrian.cc}}} $|$
+	\faGithub~\href{https://github.com/udontur}{\textcolor{black}{\underline{@udontur}}} $|$
+	\faLaptopCode~\href{https://leetcode.com/udontur}{\textcolor{black}{\underline{LeetCode}}}
+\end{center}
+
+%-----------EDUCATION-----------
+% \section{Education}
+% \resumeSubHeadingListStart
+% \resumeSubheading
+% {University}{Sep 2027 -- Present}
+% {Computer Science}{Canada}
+% \resumeItemListStart
+% \resumeItem{Activity 1}
+% \resumeItem{Activity 2}
+% \resumeItemListEnd
+% \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Lead Organizer --- PoC}{Dec 2025 -- Mar 2026}
+{Campfire Hong Kong, Hack Club -- Organizer Team}{Hong Kong SAR}
+\resumeItemListStart
+\resumeItem{Co-organized a 2-day on-site hackathon for 60+ students in Hong Kong with 3 core organizers}
+\resumeItem{Worked on everything like logistics, designing, event operations, financial planning, etc}
+\resumeItem{Secured HK\$25,000+ with 15 sponsors like The Well, Nex Inc, Jane Street, GoGoX, Kepler Interactive}
+\resumeItem{Ensured all participants walked away with a game they made with their friends, some prizes, and a big smile}
+\resumeItem{A game jam system with a digital quest system, stock market, prize shop, and auction}
+\resumeItemListEnd
+
+\resumeSubheading
+{IT Intern \textmd{\textit{\small(Reference available upon request)}}}{Jul 2025 -- Aug 2025}
+{Chong Lap (H.K.) Co. Ltd. -- IT Team}{Hong Kong SAR}
+\resumeItemListStart
+\resumeItem{Coordinated with the IT team on pre-production application of the ERP system (Microsoft Business Central)}
+\resumeItem{Automated key business workflows using Power Automate and Azure Cloud to boost employee efficiency}
+\resumeItem{Diagnosed the ERP's limitations and implemented effective workarounds from scratch}
+\resumeItem{Migrated and cleaned core company data with Python and Excel}
+\resumeItem{Demonstrated positive working attitude by being dedicated, reliable, and organized}
+\resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Hadrian.CC} {\small\href{https://github.com/udontur/hadrian-cc/tree/dev}{\textcolor{black}{$\vert$ \underline{See source code}}}}}{Apr 2026 -- Present}
+{A static website for displaying my online resume}
+\resumeItemListStart
+\resumeItem{Built all web components using Astro, HTML, and TailwindCSS following industry design standards}
+\resumeItem{Highly optimized using Astro methods and industry standards. Deployed on Cloudflare}
+\resumeItem{Technology stack: Astro, HTML, TailwindCSS, JavaScript, Cloudflare}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Umpire} {\small\href{https://github.com/udontur/umpire}{\textcolor{black}{$\vert$ \underline{See source code}}}}}{Mar 2025 -- Jun 2025}
+{A multithreaded TUI for speeding up competitive programming workflows locally}
+\resumeItemListStart
+
+\resumeItem{Multithreaded using C++17 STL to parallelize test-case judging with TLE and RTE handling}
+\resumeItem{Uses FTXUI TUI with multiple runtime options using argparse to enhance UX}
+\resumeItem{Integrated Nix with CMake to enable cross-platform compatibility for Nix and GitHub Actions CI}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------ACTIVITIES-----------
+\section{Activities}
+\vspace{-4pt}
+{\setlength{\multicolsep}{4pt}
+	\begin{multicols}{2}
+		\begin{itemize}[leftmargin=0.15in, label=$\bullet$, itemsep=2pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+			\small
+			\item \textbf{Distinction} --- Canadian Computing Contest (Senior Div)
+			\item \textbf{Silver} --- Hong Kong Secondary School Coding Contest
+			\item \textbf{Top 15\%} --- LeetCode Weekly Contest 471
+			\item \textbf{Distinction} --- Canadian Senior Mathematics Contest
+		\end{itemize}
+	\end{multicols}}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+	\item
+	      {\small\begin{tabularx}{\linewidth}{@{}>{\bfseries\raggedleft\arraybackslash}p{2.8cm}@{\hspace{1em}}X@{}}
+		      Languages       & C++, Go, Python, HTML, CSS, Nix, Rust, JavaScript                        \\
+		      Frameworks      & Astro, TailwindCSS, Nix(OS) ecosystem, Go ecosystem, React                \\
+		      Tools & Git, Linux, Goreleaser, Cloudflare, DigitalOcean, Podman, CMake, GitHub Actions, Supabase \\ 
+	      \end{tabularx}}
+\end{itemize}
+
+\pagebreak
+
+%-----------REFERENCES-----------
+% \section{References}
+% \begin{itemize}[leftmargin=0.15in, label={}, itemsep=6pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+% 	\item \textbf{\large NAME} \\
+% 	      \textit{\small TITLE --- COMPANY} \\
+% 	      \small \href{mailto:EMAIL}{\textcolor{black}{EMAIL}}
+% \end{itemize}
+
+%-------------------------------------------
+\end{document}
